@@ -1,0 +1,109 @@
+/* The divs above the footer */
+#footer {
+    padding: 20px 30px 0 30px;
+    height: 208px;
+}
+
+/* Footer logo */
+#footerlogo {
+    width:70px;
+    height:auto;
+    margin-bottom:22px;
+}
+
+/* Paragraphs */
+#footer p, #copyright p {
+    color: #777;
+    font-size: 11px;
+}
+
+/* -------------
+  LEFT FOOTER
+ ------------- */
+
+/* Container of social media icons */
+#footer-smicon-container {
+    padding: 0 0 1rem 8px;
+}
+
+/* Social media icons */
+.smicon {
+    width:24px;
+    height:24px;
+    margin-right:11px;
+    transition:filter 0.25s;
+}
+
+.smicon:hover {
+    cursor:pointer;
+    filter:invert(100%);
+}
+
+/* -------------
+  RIGHT FOOTER
+ ------------- */
+
+/* Contact header */
+#footer h6 {
+    text-align:center;
+}
+
+/* Horizontal separator */
+.horizontal-separator {
+    background: linear-gradient(to right, black, white, black);
+    height:1px;
+    width:100%;
+}
+
+/* Makes the icon groups horizontal */
+.icongrouphorizontal {
+    height: calc(100% - 1px - 19px - 8px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Makes the icon groups vertical */
+.icongroupvertical {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:baseline;
+    padding-bottom: 15px;
+}
+
+/* Icon group */
+.icongroup {
+    display:inline;
+}
+
+/* Icon group children */
+.icongroup * {
+    display:inline-block;
+}
+
+/* Icons */
+#footer .contacticon {
+    width:16px;
+    height:auto;
+    margin-right: 20px;
+}
+
+/* -------------
+  BOTTOM FOOTER
+ ------------- */
+
+/* Copyright */
+#copyright {
+    background-color: #141414;
+    padding: 12px 30px 12px 30px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+/* Paragraph in the copyright */
+#copyright p {
+    margin:0;
+}

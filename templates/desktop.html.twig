@@ -1,0 +1,209 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Mix-Music
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('build/app.js') }}"></script>
+    <script src="{{ asset('build/app-desktop.js') }}"></script>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/app.css') }}" />
+    <link rel="stylesheet" href="{{ asset('build/app-desktop.css') }}" />
+
+    <link rel="preload" href="{{ asset('build/assets/images/loading.gif') }}" as="image" />
+    <link rel="preload" href="{{ asset('build/assets/images/mixmusicpic2.jpg') }}" as="image" />
+{% endblock %}
+
+{% block body %}
+
+    <!-- Loading splash screen -->
+    <div id="loading-splash">
+        <img src="{{ asset('build/assets/images/loading.gif') }}" />
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm fixed-top">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="javascript:">
+            <img src="{{ asset('build/assets/images/logo.png') }}" />
+        </a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a id="navlink1" class="nav-link" href="javascript:">WHAT WE ARE</a>
+                </li>
+                <li class="nav-item">
+                    <a id="navlink2" class="nav-link" href="javascript:">WHY CHOOSE US</a>
+                </li>
+                <li class="nav-item">
+                    <a id="navlink3" class="nav-link" href="javascript:">WHAT WE DO</a>
+                </li>
+                <li class="nav-item">
+                    <a id="navlink4" class="nav-link" href="javascript:">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Fullpage parent -->
+    <div id="fullpage">
+
+        <!-- Hero (Section 1) -->
+        <div class="section" id="section1">
+            <div>
+                <h1 class="load-hidden">Personalise your live performances</h1>
+                <p>
+                    <a class="btn mixmusicbutton load-hidden" id="herogetstarted" role="button">GET STARTED</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section" id="section2">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="load-hidden">Inspire your guests</h1>
+                </div>
+                <div class="col-md-6">
+                    <p class="description">Our mission is to provide professional live performances using the very best musicians in your surrounding area. Choose and match from our carefully selected performers and build a collaboration. It really is as simple as that.</p>
+                    <div class="getstarted">
+                        <p>Get started ></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section" id="section3">
+            <h1 class="load-hidden">Why Mix-Music?</h1>
+            <div class="row">
+                <div class="col-md-4 column">
+                    <div class="card load-hidden" id="card1">
+                        <div class="card-body">
+                            <img style="background-image:url({{ asset('build/assets/images/mixmusicpic4.jpg') }})" />
+                            <h4>Top-Quality Musicians</h4>
+                            <p>At Mix-Music, we won’t settle for the average performance. We ensure that you get the best quality musicians possible to suit your event. No compromise.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 column">
+                    <div class="card load-hidden" id="card2">
+                        <div class="card-body">
+                            <img style="background-image:url({{ asset('build/assets/images/mixmusicpicture.jpg') }});" />
+                            <h4>Complete Freedom</h4>
+                            <p>Need great artists every month? Does your venue regularly use live music? Become one of our Venue Partners today for a discounted service from Mix-Music.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 column">
+                    <div class="card load-hidden" id="card3">
+                        <div class="card-body">
+                            <img style="background-image:url({{ asset('build/assets/images/mixmusicpic7.jpg') }});" />
+                            <h4>It Couldn’t Be Easier</h4>
+                            <p>Sometimes hiring the right live music can be a challenge. Why not leave it to us? We can help consolidate the right type of performance to suit your event.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section" id="section4">
+            <div id="thirdfirst" class="third">
+                <div class="row load-hidden">
+                    <div class="col-md-12 col-lg-6 d-flex flex-column justify-content-center order-1 order-sm-1 order-md-1 order-lg-1">
+                        <h1 class="text-center text-md-left">Synchronised calendar availability</h1>
+                        <p class="text-center text-md-left">Our performer profiles include a bespoke calendar functionality that showcases their availability, so you’ll always know who is available on the day of your event.</p>
+                    </div>
+                    <div class="col-md-12 col-lg-6 d-flex justify-content-center align-items-center order-lg-2"><i class="fa fa-calendar-alt"></i></div>
+                </div>
+            </div>
+            <div id="thirdsecond" class="third">
+                <div class="row load-hidden">
+                    <div class="col-md-12 col-lg-6 d-flex flex-column justify-content-center order-2 order-sm-2 order-md-2 order-lg-1">
+                        <h1 class="text-center text-md-right">Leave reviews for artists</h1>
+                        <p class="text-center text-md-right">Like what the Performers had to offer? Why not provide them each with a review so that other Venues can see what they have to offer? Recommendations go a long way.</p>
+                    </div>
+                    <div class="col-md-12 col-lg-6 d-flex justify-content-center align-items-center"><i class="fa fa-pencil-alt"></i></div>
+                </div>
+            </div>
+            <div id="thirdthird" class="third">
+                <div class="row load-hidden">
+                    <div class="col-md-12 col-lg-6 d-flex flex-column justify-content-center order-2 order-sm-2 order-md-2 order-lg-1">
+                        <h1 class="text-center text-md-left">Using Mix-Music is simple</h1>
+                        <p class="text-center text-md-left">Login to your account, input details about your event then select and combine from our available performers and playlists. It couldn’t be easier.</p>
+                    </div>
+                    <div class="col-md-12 col-lg-6 d-flex justify-content-center align-items-center order-lg-2"><i class="fa fa-cog"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="section" id="contactus">
+            <h1 class="load-hidden">Contact Us</h1>
+            <p class="load-hidden">Got any questions? Feel free to contact us directly and a member of our team will contact you within 12 hours.</p>
+            <form>
+                <input class="form-control" type="text" placeholder="Name" />
+                <input class="form-control" type="text" placeholder="Email" />
+                <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                <button class="mixmusicbutton">SUBMIT</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="section fp-auto-height">
+
+            <div class="row" id="footer">
+
+                <div class="col-md-4">
+                    <img src="{{ asset('build/assets/images/logo.png') }}" id="footerlogo" />
+                    <p>Mix-Music is an agency that allows event holders to mix and match talented musicians to play at their events.</p>
+                    <p>We also provide contractual agreements for repeated bookings on top of support for one-time events. Make your evening amazing with Mix-Music.</p>
+                    <div id="footer-smicon-container">
+                        <a href="https://www.facebook.com/mixmusic.co.uk/"><img src="{{ asset('build/assets/images/icons/facebook.png') }}" class="smicon" /></a>
+                        <a href="https://twitter.com/mix_____music"><img src="{{ asset('build/assets/images/icons/twitter.png') }}" class="smicon" /></a>
+                        <a href="https://www.instagram.com/mix_____music/"><img src="{{ asset('build/assets/images/icons/instagram.png') }}" class="smicon" /></a>
+                        <a href="https://www.linkedin.com/company/mix-music-co-uk/"><img src="{{ asset('build/assets/images/icons/linkedin.png') }}" class="smicon" /></a>
+                    </div>
+                </div>
+
+                <div class="col-md-5"></div>
+
+                <div class="col-md-3">
+                    <h6>Contact</h6>
+                    <div class="horizontal-separator"></div>
+                    <div class="icongrouphorizontal">
+                        <div class="icongroupvertical">
+                            <div class="icongroup">
+                                <img class="contacticon" src="{{ asset('build/assets/images/icons/telephone.png') }}" />
+                                <p>01202 900676</p>
+                            </div>
+                            <div class="icongroup">
+                                <img class="contacticon" src="{{ asset('build/assets/images/icons/email.png') }}" />
+                                <p>info@mix-music.co.uk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="copyright">
+                <p>2018 © All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

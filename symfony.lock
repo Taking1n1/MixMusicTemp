@@ -83,6 +83,9 @@
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
+    "mobiledetect/mobiledetectlib": {
+        "version": "2.8.33"
+    },
     "monolog/monolog": {
         "version": "1.23.0"
     },
@@ -123,6 +126,15 @@
             "branch": "master",
             "version": "5.2",
             "ref": "fb7e19da7f013d0d422fa9bce16f5c510e27609b"
+        }
+    },
+    "suncat/mobile-detect-bundle": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "8284b33273c99974ef84c7e544e94aefac1a4c7f"
         }
     },
     "swiftmailer/swiftmailer": {
@@ -375,6 +387,15 @@
             "branch": "master",
             "version": "3.3",
             "ref": "dae9b39fd6717970be7601101ce5aa960bf53d9a"
+        }
+    },
+    "symfony/webpack-encore-pack": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "8e81b0743207474b384548d9bc73fb03b218a9bf"
         }
     },
     "symfony/yaml": {

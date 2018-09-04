@@ -1,0 +1,117 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Mix-Music
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('build/app.js') }}"></script>
+    <script src="{{ asset('build/app-mobile.js') }}"></script>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/app.css') }}" />
+    <link rel="stylesheet" href="{{ asset('build/app-mobile.css') }}" />
+
+    <link rel="preload" href="{{ asset('build/assets/images/loading.gif') }}" as="image" />
+{% endblock %}
+
+{% block body %}
+
+    <!-- Loading splash screen -->
+    <div id="loading-splash">
+        <img src="{{ asset('build/assets/images/loading.gif') }}" />
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark fixed-top">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="javascript:">
+            <img src="{{ asset('build/assets/images/logo.png') }}" />
+        </a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a id="navlink1" class="nav-link" href="javascript:">WHAT WE ARE</a>
+                </li>
+                <li class="nav-item">
+                    <a id="navlink2" class="nav-link" href="javascript:">WHY CHOOSE US</a>
+                </li>
+                <li class="nav-item">
+                    <a id="navlink3" class="nav-link" href="javascript:">WHAT WE DO</a>
+                </li>
+                <li class="nav-item">
+                    <a id="navlink4" class="nav-link" href="javascript:">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Fullpage parent -->
+    <div id="fullpage">
+
+        <!-- Hero (Section 1) -->
+        <div class="section" id="section1">
+            <div>
+                <h1 class="load-hidden">Personalise your live performances</h1>
+                <p>
+                    <a class="btn mixmusicbutton load-hidden" id="herogetstarted" role="button">GET STARTED</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section" id="section2">
+            <h1 class="load-hidden">Inspire your guests</h1>
+            <p class="description load-hidden">Our mission is to provide professional live performances using the very best musicians in your surrounding area. Choose and match from our carefully selected performers and build a collaboration. It really is as simple as that.</p>
+            <div class="getstarted load-hidden"><p>Get started ></p></div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section" id="section3">
+            <h1 class="load-hidden">Why Mix-Music?</h1>
+            <div class="block hide" id="s3-block1">
+                <h4>Top-Quality Musicians</h4>
+                <p>At Mix-Music, we won’t settle for the average performance. We ensure that you get the best quality musicians possible to suit your event. No compromise.</p>
+            </div>
+            <div class="block hide" id="s3-block2">
+                <h4>Complete Freedom</h4>
+                <p>Need great artists every month? Does your venue regularly use live music? Become one of our Venue Partners today for a discounted service from Mix-Music.</p>
+            </div>
+            <div class="block hide" id="s3-block3">
+                <h4>It Couldn't Be Easier</h4>
+                <p>Sometimes hiring the right live music can be a challenge. Why not leave it to us? We can help consolidate the right type of performance to suit your event.</p>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section" id="section4">
+            <div class="block hide" id="s4-block1">
+                <i class="fa fa-calendar-alt"></i>
+                <h4>Synchronised calendar availability</h4>
+                <p>Our performer profiles include a bespoke calendar functionality that showcases their availability, so you’ll always know who is available on the day of your event.</p>
+            </div>
+            <div class="block hide" id="s4-block2">
+                <i class="fa fa-pencil-alt"></i>
+                <h4>Leave reviews for artists</h4>
+                <p>Like what the Performers had to offer? Why not provide them each with a review so that other Venues can see what they have to offer? Recommendations go a long way.</p>
+            </div>
+            <div class="block hide" id="s4-block3">
+                <i class="fa fa-cog"></i>
+                <h4>Using Mix-Music is simple</h4>
+                <p>Login to your account, input details about your event then select and combine from our available performers and playlists. It couldn’t be easier.</p>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

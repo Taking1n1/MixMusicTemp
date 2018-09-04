@@ -1,0 +1,17 @@
+/* Section */
+#section1 {
+	background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../images/mixmusicpic2.jpg');
+	background-position:center;
+	background-size: cover;
+
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+	text-align:center;
+
+	/* Heading */
+	h1 {
+		margin-bottom:80px;
+	}
+}

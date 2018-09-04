@@ -1,0 +1,11 @@
+#loading-splash {
+  position:fixed;
+  width:100vw;
+  height:100vh;
+  background-color:black;
+  z-index:2000;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}

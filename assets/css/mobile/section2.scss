@@ -1,0 +1,37 @@
+/* Section */
+#section2 {
+  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../images/mixmusicpic3.jpg');
+  background-position:center;
+  background-size: cover;
+
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+
+  text-align:center;
+
+  /* Heading */
+  h1 {
+    text-align:center;
+    font-size: 56px;
+    margin-bottom:40px;
+  }
+
+  /* Description */
+  .description {
+    line-height: 40px;
+    margin-bottom:40px;
+  }
+
+  /* Get started */
+  .getstarted {
+    text-align: center;
+  }
+  .getstarted p {
+    display:inline;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+    transition: border 0.25s;
+  }
+}
