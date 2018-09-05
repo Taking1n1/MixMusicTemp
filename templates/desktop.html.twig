@@ -154,12 +154,12 @@
         <div class="section" id="contactus">
             <h1 class="load-hidden">Contact Us</h1>
             <p class="load-hidden">Got any questions? Feel free to contact us directly and a member of our team will contact you within 12 hours.</p>
-            <form>
-                <input class="form-control" type="text" placeholder="Name" />
-                <input class="form-control" type="text" placeholder="Email" />
-                <textarea class="form-control" rows="6" placeholder="Message"></textarea>
-                <button class="mixmusicbutton">SUBMIT</button>
+            <form id="contactusform" action="{{ path('contactus') }}" method="post">
+                <input class="form-control" type="text" placeholder="Name" name="name" />
+                <input class="form-control" type="text" placeholder="Email" name="email" />
+                <textarea class="form-control" rows="6" placeholder="Message" name="message" ></textarea>
             </form>
+            <button id="contactusbutton" class="mixmusicbutton">SUBMIT</button>
         </div>
 
         <!-- Footer -->

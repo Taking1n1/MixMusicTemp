@@ -1,0 +1,66 @@
+@import "../common/unselectable";
+
+/* Blocks */
+.block {
+  @extend .unselectable;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+
+  border: 1px solid white;
+  border-left: 8px solid white;
+
+  background-position:center!important;
+  background-size:cover!important;
+
+  width:80vw;
+  height:16vh;
+  margin-bottom:40px;
+
+  overflow:hidden; // When you hide it, the paragraph doesn't go outside the block
+
+  /* Heading */
+  h4 {
+    padding: 0 10px 0 10px;
+    text-align:center;
+  }
+
+  /* Paragraph */
+  p {
+    font-size: 10px;
+    padding: 0 10px 0 10px;
+    margin:0;
+    text-align:center;
+
+    transition:height 0.2s, opacity 0.2s;
+    height:45px;
+    opacity:1;
+  }
+
+  /* If block has class 'hide', then hide the paragraph */
+  &.hide {
+    p { height:0; opacity:0; }
+  }
+
+  /* ID specific */
+  &#s3-block1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../images/mixmusicpic4.jpg');
+  }
+  &#s3-block2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../images/mixmusicpicture.jpg');
+  }
+  &#s3-block3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../images/mixmusicpic7.jpg');
+  }
+  &#s4-block1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../images/mixmusicpic8.jpg');
+  }
+  &#s4-block2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../images/mixmusicpicture9.jpg');
+  }
+  &#s4-block3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../images/mixmusicpicture10.jpg');
+  }
+}

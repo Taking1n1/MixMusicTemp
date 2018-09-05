@@ -1,3 +1,8 @@
+/**
+ * scrollrevealinit.js
+ * Enables ScrollReveal on desktop
+ */
+
 // Gets jquery
 import $ from 'jquery';
 

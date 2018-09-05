@@ -1,3 +1,15 @@
 swiftmailer:
-    url: '%env(MAILER_URL)%'
-    spool: { type: 'memory' }
+  transport: gmail
+  username: mixmusic465@gmail.com
+  password: "hR!sM?94!mP?Q"
+  host: localhost
+  port: 465
+  encryption: ssl
+  auth-mode: login
+  url: '%env(MAILER_URL)%'
+  spool: { type: 'memory' }
+  stream_options:
+    ssl:
+      allow_self_signed: true
+      verify_peer: false
+      verify_peer_name: false

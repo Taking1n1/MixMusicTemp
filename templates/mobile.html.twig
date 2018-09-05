@@ -96,20 +96,29 @@
         <!-- Section 4 -->
         <div class="section" id="section4">
             <div class="block hide" id="s4-block1">
-                <i class="fa fa-calendar-alt"></i>
                 <h4>Synchronised calendar availability</h4>
                 <p>Our performer profiles include a bespoke calendar functionality that showcases their availability, so you’ll always know who is available on the day of your event.</p>
             </div>
             <div class="block hide" id="s4-block2">
-                <i class="fa fa-pencil-alt"></i>
                 <h4>Leave reviews for artists</h4>
                 <p>Like what the Performers had to offer? Why not provide them each with a review so that other Venues can see what they have to offer? Recommendations go a long way.</p>
             </div>
             <div class="block hide" id="s4-block3">
-                <i class="fa fa-cog"></i>
                 <h4>Using Mix-Music is simple</h4>
                 <p>Login to your account, input details about your event then select and combine from our available performers and playlists. It couldn’t be easier.</p>
             </div>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="section" id="contactus">
+            <h1 class="load-hidden">Contact Us</h1>
+            <p class="load-hidden">Got any questions? Feel free to contact us directly and a member of our team will contact you within 12 hours.</p>
+            <form id="contactusform" action="{{ path('contactus') }}" method="post">
+                <input class="form-control" type="text" placeholder="Name" name="name" />
+                <input class="form-control" type="text" placeholder="Email" name="email" />
+                <textarea class="form-control" rows="6" placeholder="Message" name="message" ></textarea>
+            </form>
+            <button id="contactusbutton" class="mixmusicbutton">SUBMIT</button>
         </div>
 
     </div>

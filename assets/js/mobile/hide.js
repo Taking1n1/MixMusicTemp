@@ -1,3 +1,8 @@
+/**
+ * hide.js
+ * Allows descriptions to be displayed by clicking / tapping on blocks
+ */
+
 import $ from 'jquery';
 
 $(document).ready(function(){

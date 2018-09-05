@@ -2,65 +2,26 @@
 
 /* Section */
 #section4 {
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../images/mixmusicpicture11.jpg');
+  background-position:center;
+  background-size: cover;
+
   width:100%;
-  height:100vh!important;
-  background:black;
   padding:0;
 
   display:flex;
   flex-direction:column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
-  /* Blocks */
+  /* Block override */
   .block {
-    @extend .unselectable;
+    height: 20vh;
+    margin:40px 0 0 0;
 
-    width:100%;
-    text-align:center;
-    background-position:center!important;
-    background-size:cover!important;
-    padding:0 50px 0 50px;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    flex-grow:1;
-
-    overflow:hidden; // When you hide it, the paragraph doesn't go outside the block
-
-    // Icon
-    i {
-      font-size: 30px;
-      margin-bottom:12px;
-    }
-
-    // Paragraph
-    p {
-      font-size: 13px;
-      transition:height 0.2s, opacity 0.2s;
-      height:76px;
-    }
-
-    &#s4-block1 {
-      background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../images/mixmusicpic8.jpg');
-    }
-    &#s4-block2 {
-      background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../images/mixmusicpicture9.jpg');
-    }
-    &#s4-block3 {
-      background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../images/mixmusicpicture10.jpg');
-    }
-
-    /* If block has class 'hide', then hide the paragraph */
-    &.hide {
-      p { height:0; opacity:0; }
-    }
-
-    /* If block has class 'show', then make it bigger */
-    &.show {
-      flex-grow: 2;
+    /* The first child should have no margin */
+    &:nth-child(1) {
+      margin:0;
     }
   }
 }

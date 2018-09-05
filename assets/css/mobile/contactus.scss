@@ -1,0 +1,53 @@
+/* Section */
+#contactus {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../images/mixmusicpic6.jpg');
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  /* Heading */
+  h1 {
+    margin-bottom: 15px;
+  }
+
+  /* Paragraph */
+  p {
+    font-size: 13px;
+    color: #cccccc;
+    margin-bottom: 25px;
+  }
+
+  /* Forms */
+  form {
+    width: 80%;
+  }
+
+  /* Form controls */
+  .form-control {
+    color: white;
+    background-color: black;
+    font-family: "Roboto";
+    font-weight: 300;
+    transition: background-color 0.25s;
+    margin-bottom: 25px;
+
+    outline: none;
+    box-shadow: none !important;
+    border: 1px solid #777 !important;
+
+    &:disabled {
+      background-color: #161616;
+    }
+  }
+
+  .form-control:focus {
+    color: white;
+    background-color: #111111;
+  }
+}

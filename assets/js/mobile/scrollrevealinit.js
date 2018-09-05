@@ -1,3 +1,8 @@
+/**
+ * scrollrevealinit.js
+ * Enables ScrollReveal on mobile
+ */
+
 // Gets jquery
 import $ from 'jquery';
 
@@ -103,21 +108,30 @@ $(document).ready(function ()
     sr.reveal('#s4-block1', {
         distance: '100%',
         origin: 'left',
-        duration: 1500
+        duration: 1500,
+        rotate: {
+            z: -100
+        }
     });
 
     sr.reveal('#s4-block2', {
         distance: '100%',
         origin: 'left',
         delay:200,
-        duration: 1500
+        duration: 1500,
+        rotate: {
+            z: -100
+        }
     });
 
     sr.reveal('#s4-block3', {
         distance: '100%',
         origin: 'left',
         delay:400,
-        duration: 1500
+        duration: 1500,
+        rotate: {
+            z: -100
+        }
     });
 
     /* -----------

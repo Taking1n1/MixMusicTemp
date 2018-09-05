@@ -14,7 +14,7 @@ body {
 	height:100%;
 	background-color: black;
 	color:white;
-	overflow:hidden!important;
+	overflow-x:hidden!important; // Hides horizontal scroll-bar
 }
 
 /* This helps ScrollReveal */
