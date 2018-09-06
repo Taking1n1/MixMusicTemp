@@ -1,29 +1,29 @@
 .mixmusicbutton {
-	background-color:black;
-	border:1px solid white;
-	transition:background-color 0.1s, transform 0.1s;
-	padding:15px 20px 15px 20px;
-	color:white;
-	
-	letter-spacing: 3px;
-	border-radius: .25rem;
-}
+  background-color: black;
+  border: 1px solid white;
+  transition: background-color 0.1s, transform 0.1s;
+  padding: 15px 20px 15px 20px;
+  color: white;
 
-.mixmusicbutton:hover {
-	background-color:#222222;
-	border:1px solid white;
-	transform:scale(1.1, 1.1);
-	color:white;
-    cursor:pointer;
+  letter-spacing: 3px;
+  border-radius: .25rem;
+
+  &:hover {
+    background-color: #222222;
+    border: 1px solid white;
+    transform: scale(1.1, 1.1);
+    color: white;
+    cursor: pointer;
+  }
 }
 
 .mixmusicbuttondisable {
-	background-color: #161616;
-	border:1px solid white;
-	transition:background-color 0.1s, transform 0.1s;
-	padding:15px 20px 15px 20px;
-	color:white;
+  background-color: #161616;
+  border: 1px solid white;
+  transition: background-color 0.1s, transform 0.1s;
+  padding: 15px 20px 15px 20px;
+  color: white;
 
-	letter-spacing: 3px;
-	border-radius: .25rem;
+  letter-spacing: 3px;
+  border-radius: .25rem;
 }

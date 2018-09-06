@@ -84,11 +84,11 @@
 /* Icon group */
 .icongroup {
     display:inline;
-}
 
-/* Icon group children */
-.icongroup * {
-    display:inline-block;
+    /* Icon group children */
+    * {
+        display:inline-block;
+    }
 }
 
 /* Icons */
@@ -110,9 +110,9 @@
     display:flex;
     flex-direction:column;
     justify-content:center;
-}
 
-/* Paragraph in the copyright */
-#copyright p {
-    margin:0;
+    /* Paragraph in the copyright */
+    p {
+        margin:0;
+    }
 }

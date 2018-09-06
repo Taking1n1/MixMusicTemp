@@ -3,23 +3,23 @@
     width:100%;
     background:black;
     padding:0;
-}
 
-/* Thirds */
-#section4 .third {
-    min-height:33.333vh;
-    background-position:center;
-    background-size:cover;
-    padding:0 50px 0 50px;
-}
+    /* Thirds */
+    .third {
+        min-height:33.333vh;
+        background-position:center;
+        background-size:cover;
+        padding:0 50px 0 50px;
 
-#section4 .third .row {
-    min-height:33.333vh;
-}
+        .row {
+            min-height:33.333vh;
+        }
+    }
 
-#section4 p {
-    font-size:13px;
-    color:rgb(204, 204, 204);
+    p {
+        font-size:13px;
+        color:rgb(204, 204, 204);
+    }
 }
 
 #thirdfirst {

@@ -11,18 +11,18 @@
 
   text-align: center;
   padding-top: 100px;
-}
 
-/* Heading */
-#contactus h1 {
-  margin-bottom: 30px;
-}
+  /* Heading */
+  h1 {
+    margin-bottom: 30px;
+  }
 
-/* Paragraph */
-#contactus p {
-  font-size: 13px;
-  color: #cccccc;
-  margin-bottom: 40px;
+  /* Paragraph */
+  p {
+    font-size: 13px;
+    color: #cccccc;
+    margin-bottom: 40px;
+  }
 }
 
 /* Forms */
@@ -31,7 +31,7 @@ form {
 }
 
 /* Form controls */
-.form-control, {
+.form-control {
   color: white;
   background-color: black;
   font-family: "Roboto";
@@ -46,9 +46,9 @@ form {
   &:disabled {
     background-color: #161616;
   }
-}
 
-.form-control:focus {
-  color: white;
-  background-color: #111111;
+  &:focus {
+    color: white;
+    background-color: #111111;
+  }
 }

@@ -1,40 +1,41 @@
 /* Section */
 #section2 {
-	background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../images/mixmusicpic3.jpg');
-	background-position:center;
-	background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../images/mixmusicpic3.jpg');
+  background-position: center;
+  background-size: cover;
 
-	display:flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-	text-align:center;
-}
+  text-align: center;
 
-/* Heading */
-#section2 h1 {
-    text-align:left;
-    padding-left:50px;
-    font-size: 56px;
-}
-
-/* Description 40px */
-#section2 .description {
-    line-height: 40px;
-}
-
-/* Get started */
-#section2 .getstarted {
+  /* Heading */
+  h1 {
     text-align: left;
-}
+    padding-left: 50px;
+    font-size: 56px;
+  }
 
-#section2 .getstarted p {
-    display:inline;
-    border-bottom: 1px solid white;
-    padding-bottom: 15px;
-    transition: border 0.25s;
-}
-#section2 .getstarted p:hover {
-    cursor:pointer;
-    border-bottom: 3px solid white;
+  /* Description 40px */
+  .description {
+    line-height: 40px;
+  }
+
+  /* Get started */
+  .getstarted {
+    text-align: left;
+
+    p {
+      display: inline;
+      border-bottom: 1px solid white;
+      padding-bottom: 15px;
+      transition: border 0.25s;
+
+      &:hover {
+        cursor: pointer;
+        border-bottom: 3px solid white;
+      }
+    }
+  }
 }

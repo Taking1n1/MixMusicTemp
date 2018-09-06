@@ -27,11 +27,11 @@
   /* Get started */
   .getstarted {
     text-align: center;
-  }
-  .getstarted p {
-    display:inline;
-    border-bottom: 1px solid white;
-    padding-bottom: 15px;
-    transition: border 0.25s;
+    p {
+      display:inline;
+      border-bottom: 1px solid white;
+      padding-bottom: 15px;
+      transition: border 0.25s;
+    }
   }
 }
