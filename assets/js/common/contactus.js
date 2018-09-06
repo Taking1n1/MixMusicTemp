@@ -6,6 +6,11 @@
 // Imports jquery
 import $ from 'jquery';
 
+/* --------------------------------------------------------
+ * PUT IN SOME VALIDATION ON NAME, EMAIL AND MESSAGE
+ * ------------------------------------------------------
+ */
+
 // The callback function run when captcha challenge is complete
 let onSubmit = function(token) {
 
