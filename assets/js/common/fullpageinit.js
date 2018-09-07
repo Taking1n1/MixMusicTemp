@@ -21,7 +21,24 @@ function FullPageInit(autoScrolling)
         scrollHorizontally: true,
         verticalCentered:false,
         scrollOverflow:false,
-        licenseKey: "OPEN-SOURCE-GPLV3-LICENSE"
+        licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+
+        // Upon leaving a section
+        onLeave: function(origin, destination, direction) {
+            // If we're at the front section, show the navbar. If not, hide it
+            if (destination === 1)
+                $(".navbar").addClass("override-hover");
+            else
+                $(".navbar").removeClass("override-hover");
+        },
+
+        // After loading a section (used just after page load)
+        afterLoad: function(origin, destination, direction) {
+            console.log(destination);
+            // If page loaded on section that's not front, hide navbar
+            if (destination !== 1)
+                $(".navbar").removeClass("override-hover");
+        }
     });
 
     $(".navbar-brand").click(function(){
