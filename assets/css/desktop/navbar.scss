@@ -23,13 +23,12 @@
   color: darkgrey;
   height: 80px;
   line-height: 65px;
-  transition: color 0.25s, border 0.25s;
+  transition: color 0.25s;
   letter-spacing: 3px;
   margin: 0 5px 0 5px;
 
   &:hover, .active {
     color: white;
-    border-bottom: 1px solid white;
   }
 }
 
